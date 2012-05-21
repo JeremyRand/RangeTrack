@@ -1,0 +1,156 @@
+# depslib dependency file v1.0
+1309336303 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackanalyzer.cpp
+	"RangeTrackAnalyzer.h"
+	"math.h"
+	"stdlib.h"
+
+1308166687 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackanalyzer.h
+	"RangeTrackSegmenter.h"
+
+1266188034 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksegmenter.h
+	"RangeTrackLogger.h"
+	"RangeTrackSegmentData.h"
+
+1308288813 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracklogger.h
+	"RangeTrackFilter.h"
+	"RangeTrackPositionReader.h"
+	"RangeTrackRangeReader.h"
+	<iostream>
+	<vector>
+
+1257013388 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackfilter.h
+	<vector>
+
+1265669570 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackpositionreader.h
+
+1256945300 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackrangereader.h
+
+1265528690 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksegmentdata.h
+
+1265492038 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackcreateanglepositionreader.cpp
+	"RangeTrackCreateAnglePositionReader.h"
+
+1265492070 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackcreateanglepositionreader.h
+	"RangeTrackPositionReader.h"
+
+1263346704 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackcreatedistancepositionreader.cpp
+	"RangeTrackCreateDistancePositionReader.h"
+
+1263346814 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackcreatedistancepositionreader.h
+	"RangeTrackPositionReader.h"
+
+1266451796 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackdiffpositionreader.cpp
+	"RangeTrackDiffPositionReader.h"
+
+1266451684 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackdiffpositionreader.h
+	"RangeTrackPositionReader.h"
+	<vector>
+
+1257008716 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracketrangereader.cpp
+	"RangeTrackETRangeReader.h"
+	"table_ir_range.h"
+
+1257008730 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracketrangereader.h
+	"RangeTrackRangeReader.h"
+
+1234493244 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\table_ir_range.h
+
+1258695784 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackfilter.cpp
+	"RangeTrackFilter.h"
+
+1308288868 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracklogger.cpp
+	"RangeTrackLogger.h"
+	<cmath>
+	"sinlut.h"
+
+1245357224 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\sinlut.h
+
+1261265798 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackmedian5filter.cpp
+	"RangeTrackMedian5Filter.h"
+
+1259290226 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackmedian5filter.h
+	"RangeTrackFilter.h"
+	<vector>
+
+1265491656 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracknullpositionreader.cpp
+	"RangeTrackNullPositionReader.h"
+
+1265491654 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracknullpositionreader.h
+	"RangeTrackPositionReader.h"
+
+1265669322 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackpositionreader.cpp
+	"RangeTrackPositionReader.h"
+
+1256949370 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackrangereader.cpp
+	"RangeTrackRangeReader.h"
+
+1266282912 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackrawanalograngereader.cpp
+	"RangeTrackRawAnalogRangeReader.h"
+	"table_ir_range.h"
+
+1266282960 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackrawanalograngereader.h
+	"RangeTrackRangeReader.h"
+
+1265675356 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksegmentdata.cpp
+	"RangeTrackSegmentData.h"
+
+1266797462 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksegmenter.cpp
+	"RangeTrackSegmenter.h"
+
+1266285342 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksinglemotorpositionreader.cpp
+	"RangeTrackSingleMotorPositionReader.h"
+
+1266285356 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksinglemotorpositionreader.h
+	"RangeTrackPositionReader.h"
+
+1265491198 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksingleservopositionreader.cpp
+	"RangeTrackSingleServoPositionReader.h"
+
+1265491188 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksingleservopositionreader.h
+	"RangeTrackPositionReader.h"
+
+1265491234 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksonarrangereader.cpp
+	"RangeTrackSonarRangeReader.h"
+
+1265491224 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksonarrangereader.h
+	"RangeTrackRangeReader.h"
+
+1265491320 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksumpositionreader.cpp
+	"RangeTrackSumPositionReader.h"
+
+1265491294 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracksumpositionreader.h
+	"RangeTrackPositionReader.h"
+	<vector>
+
+1266710266 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackconstantpositionreader.cpp
+	"RangeTrackConstantPositionReader.h"
+
+1266710393 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackconstantpositionreader.h
+	"RangeTrackPositionReader.h"
+
+1245357224 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\sinlut.cxx
+	"sinlut.h"
+	"sinlut.inl"
+
+1245357224 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\sinlut.inl
+
+1276549073 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackmeanfilter.cpp
+	"RangeTrackMeanFilter.h"
+
+1276549047 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackmeanfilter.h
+	"RangeTrackFilter.h"
+	<vector>
+
+1276827124 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracktimepositionreader.cpp
+	"RangeTrackTimePositionReader.h"
+
+1276827021 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetracktimepositionreader.h
+	"RangeTrackPositionReader.h"
+
+1308289926 source:c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackvectorfilter.cpp
+	"RangeTrackVectorFilter.h"
+
+1308289932 c:\users\jeremyadmin\downloads\botball\repository_2009\nhs_botball\jeremy_cross_chumby_code\librangetrack\rangetrackvectorfilter.h
+	"RangeTrackFilter.h"
+	<vector>
+

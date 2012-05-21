@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libRangeTrack" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_armlinux_gcc_compiler" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin\$(PROJECT_NAME)\$(PROJECT_NAME).so" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj\Release\" />
+				<Option type="3" />
+				<Option compiler="gnu_armlinux_gcc_compiler" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-g" />
+					<Add option="-gdwarf-2 -g3 -include autoinclude_cbc.h" />
+					<Add directory="$(#cbc.cbc_path)\include" />
+				</Compiler>
+				<Linker>
+					<Add library="$(#cbc.cbc_path)\lib\init.o" />
+					<Add library="libcbc.a" />
+					<Add library="libtrack.a" />
+					<Add library="libshared.a" />
+					<Add directory="$(#cbc.cbc_path)\lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='$(#cbc.utilsbin)\cp $(PROJECT_DIR)/*.h &quot;$(#cbc.cbc_path)/include&quot;' />
+					<Add after='$(#cbc.utilsbin)\cp $(TARGET_OUTPUT_FILE) &quot;$(#cbc.cbc_path)/lib&quot;' />
+					<Add after='$(#cbc.utilsbin)\ssh.exe -o ConnectTimeout=$(#cbc.networktimeout) -o StrictHostKeyChecking=no root@$(#cbc.cbcip) &quot;chmod -R 777 /mnt/user/&quot;' />
+					<Add after="$(#cbc.utilsbin)\rsync --archive --compress --contimeout=$(#cbc.networktimeout) ./*.h root@$(#cbc.cbcip)::user/include/" />
+					<Add after="$(#cbc.utilsbin)\rsync --archive --compress --contimeout=$(#cbc.networktimeout) bin/$(PROJECT_NAME)/$(PROJECT_NAME).so root@$(#cbc.cbcip)::user/lib/" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="SimulatorRelease">
+				<Option output="bin\SimulatorRelease\$(PROJECT_NAME)" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj\SimulatorRelease\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wimplicit -include autoinclude_sim.h" />
+					<Add directory="$(#cbc.cbc_path)\simulator\cbc2\include" />
+					<Add directory="$(#cbc.cbc_path)\simulator\gcc\include" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(#cbc.cbc_path)\simulator\cbc2\lib" />
+					<Add directory="$(#cbc.cbc_path)\simulator\gcc\lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="RangeTrackAnalyzer.cpp" />
+		<Unit filename="RangeTrackAnalyzer.h" />
+		<Unit filename="RangeTrackConstantPositionReader.cpp" />
+		<Unit filename="RangeTrackConstantPositionReader.h" />
+		<Unit filename="RangeTrackCreateAnglePositionReader.cpp" />
+		<Unit filename="RangeTrackCreateAnglePositionReader.h" />
+		<Unit filename="RangeTrackCreateDistancePositionReader.cpp" />
+		<Unit filename="RangeTrackCreateDistancePositionReader.h" />
+		<Unit filename="RangeTrackDiffPositionReader.cpp" />
+		<Unit filename="RangeTrackDiffPositionReader.h" />
+		<Unit filename="RangeTrackETRangeReader.cpp" />
+		<Unit filename="RangeTrackETRangeReader.h" />
+		<Unit filename="RangeTrackFilter.cpp" />
+		<Unit filename="RangeTrackFilter.h" />
+		<Unit filename="RangeTrackLogger.cpp" />
+		<Unit filename="RangeTrackLogger.h" />
+		<Unit filename="RangeTrackMeanFilter.cpp" />
+		<Unit filename="RangeTrackMeanFilter.h" />
+		<Unit filename="RangeTrackMedian5Filter.cpp" />
+		<Unit filename="RangeTrackMedian5Filter.h" />
+		<Unit filename="RangeTrackNullPositionReader.cpp" />
+		<Unit filename="RangeTrackNullPositionReader.h" />
+		<Unit filename="RangeTrackPositionReader.cpp" />
+		<Unit filename="RangeTrackPositionReader.h" />
+		<Unit filename="RangeTrackRangeReader.cpp" />
+		<Unit filename="RangeTrackRangeReader.h" />
+		<Unit filename="RangeTrackRawAnalogRangeReader.cpp" />
+		<Unit filename="RangeTrackRawAnalogRangeReader.h" />
+		<Unit filename="RangeTrackSegmentData.cpp" />
+		<Unit filename="RangeTrackSegmentData.h" />
+		<Unit filename="RangeTrackSegmenter.cpp" />
+		<Unit filename="RangeTrackSegmenter.h" />
+		<Unit filename="RangeTrackSingleMotorPositionReader.cpp" />
+		<Unit filename="RangeTrackSingleMotorPositionReader.h" />
+		<Unit filename="RangeTrackSingleServoPositionReader.cpp" />
+		<Unit filename="RangeTrackSingleServoPositionReader.h" />
+		<Unit filename="RangeTrackSonarRangeReader.cpp" />
+		<Unit filename="RangeTrackSonarRangeReader.h" />
+		<Unit filename="RangeTrackSumPositionReader.cpp" />
+		<Unit filename="RangeTrackSumPositionReader.h" />
+		<Unit filename="RangeTrackTimePositionReader.cpp" />
+		<Unit filename="RangeTrackTimePositionReader.h" />
+		<Unit filename="RangeTrackVectorFilter.cpp" />
+		<Unit filename="RangeTrackVectorFilter.h" />
+		<Unit filename="autoinclude_cbc.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="autoinclude_sim.h">
+			<Option target="SimulatorRelease" />
+		</Unit>
+		<Unit filename="sinlut.cxx" />
+		<Unit filename="sinlut.h" />
+		<Unit filename="sinlut.inl" />
+		<Unit filename="table_ir_range.h" />
+		<Extensions>
+			<code_completion>
+				<search_path add="$(#cbc.cbc_path)\include" />
+				<search_path add="$(#cbc.armlinux_path)\include" />
+			</code_completion>
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
